@@ -1,6 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background: url(./images/background-image.png) 0 0 / 70% no-repeat, linear-gradient(#0e1014, #0e1014);
+  background: url(./images/background-image.png) 0 0 / 87% no-repeat, linear-gradient(#0e1014, #0e1014);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

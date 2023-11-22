@@ -1,0 +1,29 @@
+.item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  margin: 0;
+  color: #e4e5ea;
+  text-align: end;
+}
+
+.text_heading {
+  margin-bottom: 6px;
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.text_paragraph {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+}

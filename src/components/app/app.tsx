@@ -5,6 +5,7 @@ import appStyles from './app.module.css';
 import {Header} from '../header/header';
 import {InfoSlice} from '../info-slice/info-slice';
 import {Button} from '../button/button';
+import {Footer} from '../footer/footer';
 
 const App: FunctionComponent = () => {
   return (
@@ -44,6 +45,7 @@ const App: FunctionComponent = () => {
           <Button/>
         </section>
       </main>
+      <Footer/>
     </div>
   )
 }

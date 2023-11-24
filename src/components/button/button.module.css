@@ -27,3 +27,27 @@
   opacity: .6;
   cursor: auto;
 }
+
+@media screen and (max-width: 1141px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 673px) {
+  .button {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 321px) {
+
+}

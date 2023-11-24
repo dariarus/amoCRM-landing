@@ -4,8 +4,9 @@ import headerStyles from './header.module.css';
 import logo from '../../images/logo.png';
 
 import {ContactButton} from '../contact-button/contact-button';
+import {TWindowWidthProps} from '../../services/types';
 
-export const Header: FunctionComponent = () => {
+export const Header: FunctionComponent<TWindowWidthProps> = (props) => {
   return (
     <header className={headerStyles.header}>
       <div className={headerStyles.header__wrap}>
@@ -28,15 +29,18 @@ export const Header: FunctionComponent = () => {
             <li className={headerStyles['navigation__list-item']}>
               <a href="#" className={`${headerStyles.text} ${headerStyles.text_link}`}>Кейсы</a>
             </li>
-            <li className={headerStyles['navigation__list-item']}>
-              <a href="#" className={`${headerStyles.text} ${headerStyles.text_link}`}>Сертификаты</a>
-            </li>
+            {
+              props.screenWidth > 419 &&
+              <li className={headerStyles['navigation__list-item']}>
+                <a href="#" className={`${headerStyles.text} ${headerStyles.text_link}`}>Сертификаты</a>
+              </li>
+            }
           </ul>
         </nav>
       </div>
-      <div className={headerStyles.header__wrap}>
+      <div className={`${headerStyles.header__wrap} ${headerStyles.header__wrap_contacts}`}>
         <p className={`${headerStyles.text} ${headerStyles.text_numbers}`}>+7 555 555-55-55</p>
-        <div className={headerStyles['header__wrap-contacts']}>
+        <div className={headerStyles['header__wrap-contact-info']}>
          <ContactButton type="telegram" />
          <ContactButton type="viber" />
          <ContactButton type="whatsapp" />

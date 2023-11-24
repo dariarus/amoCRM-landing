@@ -1,5 +1,4 @@
 :root {
-  background: url(./images/background-image.png) 0 0 / 87% no-repeat, linear-gradient(#0e1014, #0e1014);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -11,8 +10,15 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background: url(./images/background-image-large.png) 0 0 / 87% no-repeat, linear-gradient(#0e1014, #0e1014);
 }
 
 .read-the-docs {
   color: #888;
+}
+
+@media screen and (max-width: 673px) {
+  body {
+    background: none, linear-gradient(#0e1014, #0e1014);
+  }
 }

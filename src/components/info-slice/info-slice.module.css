@@ -27,3 +27,65 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+@media screen and (max-width: 1141px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 715px) {
+  .item {
+    position: relative;
+    width: fit-content;
+  }
+  
+  .item:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-right: 10px;
+    right: 105%;
+    width: 15px;
+    height: 1px;
+    background: linear-gradient(to right, #fcb045 30%, #fd1d1d);
+  }
+  
+  .text {
+    text-align: start;
+  }
+  
+  .text_heading {
+    margin: 0;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .text_paragraph {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .item {
+    margin-left: 17px;
+  }
+  
+  .item:before {
+    width: 10px;
+    right: 95%;
+  }
+  
+  .text_heading {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 341px) {
+
+}

@@ -5,6 +5,7 @@
   cursor: pointer;
   opacity: 1;
   transition: opacity .3s;
+  background-size: cover;
 }
 
 .button:hover {
@@ -12,13 +13,52 @@
 }
 
 .button_telegram {
-  background: url(../../images/telegram-icon.svg) center center no-repeat;
+  background: url(../../images/telegram-icon-large.svg) center center no-repeat;
 }
 
 .button_viber {
-  background: url(../../images/viber-icon.svg) center center no-repeat;
+  background: url(../../images/viber-icon-large.svg) center center no-repeat;
 }
 
 .button_whatsapp {
-  background: url(../../images/whatsapp-icon.svg) center center no-repeat;
+  background: url(../../images/whatsapp-icon-large.svg) center center no-repeat;
+}
+
+@media screen and (max-width: 1080px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 640px) {
+
+}
+
+@media screen and (max-width: 420px) {
+  .button {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .button_telegram {
+    background: url(../../images/telegram-icon-small.svg) center center no-repeat;
+  }
+  
+  .button_viber {
+    background: url(../../images/viber-icon-small.svg) center center no-repeat;
+  }
+  
+  .button_whatsapp {
+    background: url(../../images/whatsapp-icon-small.svg) center center no-repeat;
+  }
+}
+
+@media screen and (max-width: 321px) {
+
 }

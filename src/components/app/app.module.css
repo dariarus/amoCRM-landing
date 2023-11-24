@@ -48,6 +48,7 @@
 }
 
 .text_decorated_secondary-yellow {
+  margin-left: 0;
   background: linear-gradient(to right, #fcb045 70%, #fd1d1d 120%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -86,4 +87,110 @@
   max-width: 330px;
   margin: 40px 0 0;
   padding: 0;
+}
+
+@media screen and (max-width: 1141px) {
+  .app-container {
+    padding: 46px 20px 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  .app-container {
+    padding-top: 20px;
+  }
+  
+  .main {
+    padding-top: 50px
+  }
+  
+  .text_heading {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  
+  .text_common,
+  .text_thin {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .main__free-services {
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 673px) {
+  .app-container {
+    padding: 0 0 20px;
+  }
+  
+  .main {
+    padding: 50px 20px 20px;
+    flex-direction: column;
+    gap: 45px 0;
+    background: url(../../images/background-image-small.png) center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .main {
+    padding: 40px 15px 59px;
+  }
+  
+  .text_heading {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  
+  .text_decorated_secondary {
+    text-transform: none;
+  }
+  
+  .text_decorated_secondary-red {
+    background: linear-gradient(to right, #fcb045 40%, #fd1d1d 140%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  
+  .text_decorated_secondary-yellow {
+    background: linear-gradient(to right, #fcb045 80%, #fd1d1d 140%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  
+  .text_common {
+    text-align: start;
+  }
+  
+  .main__free-services {
+    align-self: start;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 14px 0;
+    max-width: 100%;
+    margin: 20px 0 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app-container {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 341px) {
+
 }
